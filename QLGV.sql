@@ -44,4 +44,39 @@ CREATE TABLE KHOA
     NGAYNHANCHUC date
 )
 
+CREATE TABLE DETAI
+(
+	MADT char(10),
+	TENDT nvarchar(50),
+	KINHPHI money,
+	CAPQL nvarchar(20),
+	NGAYBD date,
+	NGAYKT date,
+	MACD char(10),
+	GVCNDT char(10)
+)
+
+CREATE TABLE CHUDE
+(
+	MACD char(10),
+	TENCD nvarchar(50)
+)
+
+CREATE TABLE CONGVIEC
+(
+	MADT char(10),
+	STT int,
+	TENCV nvarchar(50),
+	NGAYBD date,
+	NGAYKT date
+)
+
+CREATE TABLE THAMGIADT
+(
+	MAGV char(10),
+	MADT char(10),
+	STT int,
+	PHUCAP float,
+	KETQUA nvarchar(15)
+)
 
