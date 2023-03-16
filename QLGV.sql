@@ -174,8 +174,41 @@ ADD CONSTRAINT FK_NGUOI_THAN
 FOREIGN KEY (MAGV)
 REFERENCES GIAOVIEN(MAGV)
 
+INSERT INTO CHUDE
+(
+    MACD, TENCD
+)
+VALUES
+(
+    'NCPT', N'Nghiên cứu phát triển'
+),
+(
+    'QLGD', N'Quản lý giáo dục' 
+),
+(
+    'UDCN', N'Ứng dụng công nghệ'
+)
+GO
 
-
-
-
+INSERT INTO GIAOVIEN
+(
+    MAGV, HOTEN, LUONG, PHAI, NGAYSINH, DIACHI, GVQLCM, MABM
+)
+VALUES
+(
+    --chú ý lương
+    '001', N'Nguyễn Hoài An', 2000, N'Nam', '1973-02-15', N'25/3 Lạc Long Quân, Q.10, TP HCM', NULL, NULL
+),
+(
+    '002', N'Trần Trà Hương', 2500, N'Nữ', '1960-06-20', N'125 Trần Hưng Đạo, Q.1, TP HCM', NULL, NULL 
+),
+(
+    '003', N'Nguyễn Ngọc Ánh', 2200, N'Nữ', '1975-05-11', N'12/21 Võ Văn Ngân Thủ Đức, TP HCM', NULL, NULL
+),
+(
+    '004', N'Trương Nam Sơn', 2300, N'Nam', '1959-06-20', N'215 Lý Thường Kiệt, TP Biên Hoà', NULL, NULL
+),
+(
+    '005', N'Lý Hoàng Hà', 2500, N'Nam', '1954-10-23', N'25/3 Lạc Long Quân, Q.10, TP HCM', NULL, NULL
+)
 
