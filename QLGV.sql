@@ -56,7 +56,7 @@ CREATE TABLE DETAI
 (
 	MADT char(10),
 	TENDT nvarchar(50),
-	KINHPHI money,
+	KINHPHI float,
 	CAPQL nvarchar(20),
 	NGAYBD date,
 	NGAYKT date,
@@ -211,19 +211,19 @@ VALUES
     '005', N'Lý Hoàng Hà', 2500.0, N'Nam', '1954-10-23', N'25/3 Lạc Long Quân, Q.10, TP HCM', NULL, NULL
 ),
 (
-	'006',N'Trần Bạch Tuyết',1500.0,N'Nữ','1980-05-20',N'127 Hùng Vương, TP Mỹ Tho',N'004', '004', NULL
+	'006',N'Trần Bạch Tuyết',1500.0,N'Nữ','1980-05-20',N'127 Hùng Vương, TP Mỹ Tho','004', NULL
 ),
 (
 	'007',N'Nguyễn An Trung',2100.0,N'Nam','1976-06-05',N'234 3/2, TP Biên Hòa', NULL, NULL
 ),
 (
-	'008',N'Trần Trung Hiếu',1800.0,N'Nam','1977-08-06',N'22/11 Lý Thường Kiệt,TP Mỹ Tho',N'007', '007', NULL
+	'008',N'Trần Trung Hiếu',1800.0,N'Nam','1977-08-06',N'22/11 Lý Thường Kiệt,TP Mỹ Tho','007', NULL
 ),
 (
-	'009',N'Trần Hoàng nam',2000.0,N'Nam','1975-11-22',N'234 Trấn Não,An Phú, TP HCM',N'001', '001', NULL
+	'009',N'Trần Hoàng nam',2000.0,N'Nam','1975-11-22',N'234 Trấn Não,An Phú, TP HCM','001', NULL
 ),
 (
-	'010',N'Phạm Nam Thanh',1500.0,N'Nam','1980-12-12',N'221 Hùng Vương,Q.5, TP HCM',N'007', '007', NULL
+	'010',N'Phạm Nam Thanh',1500.0,N'Nam','1980-12-12',N'221 Hùng Vương,Q.5, TP HCM','007', NULL
 )
 
 INSERT INTO DETAI
@@ -255,7 +255,7 @@ VALUES
 
 INSERT INTO CONGVIEC
 (
-	MADT, SOTT, TENCV, NGAYBD, NGAYKT
+	MADT, STT, TENCV, NGAYBD, NGAYKT
 )
 VALUES
 (
